@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    scrollbar-width: none;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    color: white;
+    background-color: transparent;
+    position: absolute;
+}
+
+nav .logo h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    text-transform: capitalize;
+}
+
+nav .last {
+    display: flex;
+    align-items: center;
+}
+
+nav .last p a {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0 20px;
+    color: white;
+}
+
+nav button {
+    height: 50px;
+    width: 120px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dodgerblue;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav button i {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.page1 {
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 100px 60px;
+}
+
+.page1 .content {
+    display: flex;
+    padding: 100px 0;
+}
+
+.page1 .content .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page1 .content .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.page1 .content .right h1 {
+    font-size: 9em;
+    text-transform: uppercase;
+    letter-spacing: 0.0001em;
+    line-height: 130px;
+}
+
+.page1 img {
+    width: 100%;
+}
+
+.page2 {
+    width: 100%;
+    padding: 100px 60px;
+}
+
+.page2 h1 {
+    text-align: center;
+    font-size: 7em;
+    text-transform: uppercase;
+    margin: 50px;
+    letter-spacing: 0.1px;
+}
+
+.page2 .projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page2 .projects .box {
+    width: 679px;
+    height: 570px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.page2 .projects .box .circle{
+    height: 80px;
+    width: 80px;
+    margin-top: 15%;
+    margin-left:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position:absolute;
+    background-color: white;
+}
+
+.page2 .projects .box .circle:hover{
+    height: 80px;
+    width: 80px;
+    margin-top: 15%;
+    margin-left:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position:absolute;
+    background-color: white;
+}
+
+.page2 .projects .box .circle i{
+    rotate:45deg;
+    font-size: 1.3em;
+}
+
+.page2 .projects .box img:hover {
+    filter: blur(4px);
+    transition: 0.5s;
+}
+
+.page2 .projects .box h2 {
+    margin: 10px 0;
+}
+
+.page2 .projects .box p {
+    color: grey;
+}
+
+.page2 .projects .box img {
+    width: 100%;
+}
+
+.page3 {
+    width: 100%;
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.page3 h1 {
+    text-align: center;
+    font-size: 7em;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+.page3 .services {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.page3 .services .box {
+    width: 440px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    background-color: rgb(22, 22, 22);
+}
+
+.page3 .services .box i {
+    font-size: 2.5em;
+    margin-bottom: 85px;
+}
+
+.page3 .services .box h2 {
+    margin: 10px 0;
+}
+
+.page3 .services .box p {
+    width: 300px;
+    color: grey;
+}
+
+.page3 a{
+    text-decoration: none;
+    color: white;
+}
+.page3 button {
+    height: 50px;
+    width: 120px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dodgerblue;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.page3 button i {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.page4 {
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.page4 h1 {
+    text-align: center;
+    font-size: 7em;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+.page4 .choose {
+    display: flex;
+}
+
+.page4 .left {
+    width: 50%;
+}
+
+.page4 .left .row {
+    margin: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.page4 .left .row span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    width: 70%;
+    padding-right: 50px;
+}
+
+.page4 .left .row span h2 {
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+
+.page4 .left .row h1 {
+    text-align: start;
+    width: 30%;
+    font-size: 2em;
+}
+
+.page4 .left .row p {
+    color: grey;
+}
+
+.page4 .right {
+    width: 50%;
+    padding: 50px;
+}
+
+.page4 .right img {
+    width: 100%;
+}
+
+.page4 .achievement {
+    margin: 100px 0;
+}
+
+.page4 .achievement h1 {
+    font-size: 5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.page4 .achievement .cards {
+    display: flex;
+}
+
+.page4 .achievement .cards .card {
+    height: 380px;
+    width: 400px;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(22, 22, 22);
+}
+
+.page4 .achievement .cards .card h2 {
+    font-weight: 600;
+    font-size: 3.8em;
+}
+
+.page4 .achievement .cards .card p {
+    font-size: 1.2em;
+}
+
+.page4 .experience {
+    display: flex;
+    margin: 100px 0;
+}
+
+.page4 .experience .left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.page4 .experience .left img {
+    width: 100%;
+}
+
+.page4 .experience .right {
+    width: 60%;
+}
+
+.page4 .experience .right .rect {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.584);
+}
+
+.page4 .experience .right .rect h1 {
+    font-size: 2em;
+    text-transform: none;
+}
+
+.page4 .experience .right .rect span {
+    text-align: end;
+}
+
+.page5 {
+    width: 100%;
+    padding: 0 60px;
+}
+
+.page5 h1 {
+    font-size: 5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.page5 .articles {
+    margin: 100px 0;
+}
+
+.page5 .articles .blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page5 .articles .blog .box {
+    width: 330px;
+    height: 400px;
+}
+
+.page5 .articles .blog .box img {
+    width: 100%;
+}
+
+.page5 .articles .blog .box h2 {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.page6 {
+    width: 100%;
+    padding: 50px 60px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.page6 .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.page6 .top h1 {
+    text-align: center;
+    font-size: 5em;
+    margin: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.page6 .top a{
+    color: white;
+    text-decoration: none;
+}
+.page6 .top button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.page6 .top button i {
+    margin-left: 10px;
+    font-size: 0.8em;
+}
+
+.page6 footer {
+    padding: 50px 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+}
+
+.page6 footer p {
+    color: rgb(97, 97, 97);
+}
+
+.page6 footer li {
+    margin: 25px 0;
+}
+
+.page6 footer h2 {
+    margin: 10px 0;
+}
+
+.page6 footer i {
+    color: rgb(97, 97, 97);
+    font-size: 2em;
+    margin: 0 10px;
+    margin-top: 100px;
+}
+
+.page6 footer i:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.page6 footer .fifth p {
+    color: white;
+    margin: 20px 0;
+}
+
+.page6 .last p {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.page6 footer .fifth #dod {
+    color: rgb(97, 97, 97);
+}
